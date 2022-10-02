@@ -1,11 +1,12 @@
 import About from '@/components/About';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import WorkExperience from '@/components/WorkExperience';
 import Head from 'next/head';
 
 export default function Home() {
   return (
-    <div className="z-0 h-screen snap-y snap-mandatory overflow-scroll bg-[rgb(36,36,36)] text-white">
+    <div className="z-0 h-screen snap-y snap-mandatory overflow-y-scroll bg-[rgb(36,36,36)] text-white">
       <Head>
         <title>Portfolio 🚀</title>
       </Head>
@@ -23,6 +24,9 @@ export default function Home() {
       </section>
 
       {/* Exprerience */}
+      <section id="experience" className="snap-center">
+        <WorkExperience />
+      </section>
 
       {/* Skills */}
 
