@@ -1,14 +1,16 @@
 import About from '@/components/About';
+import ContactMe from '@/components/ContactMe';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
 import WorkExperience from '@/components/WorkExperience';
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="z-0 h-screen snap-y snap-mandatory overflow-y-scroll bg-[rgb(36,36,36)] text-white">
+    <div className="z-0 h-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll bg-[rgb(36,36,36)] text-white scrollbar  scrollbar-track-transparent scrollbar-thumb-[#F7AB0A]/80">
       <Head>
         <title>Portfolio 🚀</title>
       </Head>
@@ -41,6 +43,15 @@ export default function Home() {
       </section>
 
       {/* Contact */}
+      <section id="contact" className="snap-start">
+        <ContactMe />
+      </section>
+
+      <Link href="#hero">
+        <footer>
+          <div>Icon</div>
+        </footer>
+      </Link>
     </div>
   );
 }
